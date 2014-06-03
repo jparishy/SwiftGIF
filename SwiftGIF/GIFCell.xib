@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="GIFCell" customModule="SwiftGIF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyh-Td-W6E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ys5-E7-hov">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ys5-E7-hov" secondAttribute="height" multiplier="320:99" id="fie-an-7Ye"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ys5-E7-hov" firstAttribute="width" secondItem="qyh-Td-W6E" secondAttribute="width" id="U9M-Fs-ZRR"/>
+                            <constraint firstAttribute="centerY" secondItem="ys5-E7-hov" secondAttribute="centerY" id="dNn-SU-rm1"/>
+                            <constraint firstAttribute="centerX" secondItem="ys5-E7-hov" secondAttribute="centerX" id="jGD-U1-jzT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qyh-Td-W6E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FSW-IR-qdq"/>
+                    <constraint firstAttribute="bottom" secondItem="qyh-Td-W6E" secondAttribute="bottom" id="NkB-N3-wA7"/>
+                    <constraint firstAttribute="trailing" secondItem="qyh-Td-W6E" secondAttribute="trailing" id="gaV-gJ-Tm1"/>
+                    <constraint firstItem="qyh-Td-W6E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="o7H-DF-1bx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gifImageView" destination="ys5-E7-hov" id="oOM-lR-0LO"/>
+            </connections>
+            <point key="canvasLocation" x="12" y="184"/>
+        </tableViewCell>
+    </objects>
+</document>
